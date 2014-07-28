@@ -20,6 +20,10 @@ long_description = (
     + '\n' +
     read('CHANGES.txt'))
 
+extras_require = {
+    'test': [],
+    }
+
 setup(
     name='js.knockout',
     version=version,
@@ -38,6 +42,7 @@ setup(
         'fanstatic',
         'setuptools',
         ],
+    extras_require=extras_require,
     entry_points={
         'fanstatic.libraries': [
             'knockout = js.knockout:library',
